@@ -26,3 +26,7 @@ npm run build
 - Case library, mastery, blueprint, pricing and follow-along sections
 
 The email form stores prototype submissions locally in the browser. It still needs a real backend or form service before public launch.
+
+## Design reference
+
+The original uploaded design export is preserved in `references/Clinical cases app design.zip`.
