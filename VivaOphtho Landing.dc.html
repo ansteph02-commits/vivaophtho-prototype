@@ -72,7 +72,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="#42505F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="#42505F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Notify me
         </span>
-        <span onClick="{{ goSignup }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:#0FB5A6; color:#fff; font-size:14.5px; font-weight:600; padding:11px 20px; border-radius:9px; box-shadow:0 6px 16px -6px rgba(15,181,166,.6);">Try a free case</span>
+        <span onClick="{{ goCase }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:#0FB5A6; color:#fff; font-size:14.5px; font-weight:600; padding:11px 20px; border-radius:9px; box-shadow:0 6px 16px -6px rgba(15,181,166,.6);">Try a free case</span>
       </div>
     </header>
 
@@ -85,7 +85,7 @@
         <h1 class="serif" style="font-size:62px; line-height:1.04; font-weight:500; letter-spacing:-.02em; margin:0 0 24px;">Practise the viva,<br>not just the MCQs.</h1>
         <p style="font-size:19px; line-height:1.55; color:#46535F; max-width:520px; margin:0 0 34px; font-weight:400;">Branching, examiner-grade clinical cases for EBO, FRCOphth, ICO and ABO orals. Sit across from the examiner — calmly, repeatedly — before you sit the exam.</p>
         <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
-          <span onClick="{{ goSignup }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:9px; background:#0E1726; color:#fff; font-size:16px; font-weight:600; padding:15px 26px; border-radius:11px;">Try a free case <span style="color:#0FB5A6;">→</span></span>
+          <span onClick="{{ goCase }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:9px; background:#0E1726; color:#fff; font-size:16px; font-weight:600; padding:15px 26px; border-radius:11px;">Try a free case <span style="color:#0FB5A6;">→</span></span>
           <span onClick="{{ goSignup }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:9px; color:#0E1726; font-size:16px; font-weight:500; padding:15px 22px; border-radius:11px; border:1px solid #D5DBE3;">See how it works</span>
         </div>
         <p style="font-size:13.5px; color:#7A8492; margin:0; display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:#1FA971;display:inline-block;"></span>No signup. The free case runs the real Case Player, end to end.</p>
@@ -232,7 +232,7 @@
 
     <!-- Case Player (the hero screen) -->
     <section style="padding:0 56px 90px;">
-      <div style="display:flex; background:#fff; border:1px solid #E7EBF1; border-radius:20px; overflow:hidden; box-shadow:0 30px 60px -40px rgba(14,23,38,.28); min-height:560px;">
+      <div id="vo-case" style="display:flex; background:#fff; border:1px solid #E7EBF1; border-radius:20px; overflow:hidden; box-shadow:0 30px 60px -40px rgba(14,23,38,.28); min-height:560px;">
 
         <sc-if value="{{ notFocusA }}" hint-placeholder-val="{{ true }}">
           <div style="width:248px; flex-shrink:0; background:#F7F8FA; border-right:1px solid #EEF1F5; padding:36px 30px;">
@@ -362,7 +362,6 @@
             <span style="display:block; text-align:center; cursor:pointer; font-size:15.5px; font-weight:600; color:#04201D; background:#0FB5A6; border-radius:11px; padding:14px;">Choose 12-month</span>
           </div>
         </div>
-        <p style="font-size:13.5px; color:#7A8492; margin:26px 0 0; max-width:760px;">Regional pricing is auto-detected for India, Africa and SE Asia. You already pay ~€600 to sit the exam — this is a fraction of it. No fake countdowns; the only deadline is your real exam date.</p>
       </div>
     </section>
 
@@ -371,7 +370,7 @@
       <div style="background:linear-gradient(120deg,#0E1726,#13243B); border-radius:20px; padding:64px 56px; text-align:center;">
         <h2 class="serif" style="font-size:40px; font-weight:500; letter-spacing:-.02em; color:#fff; margin:0 0 16px;">Build your readiness map from one case.</h2>
         <p style="font-size:17px; color:#9DAABB; margin:0 0 32px;">No signup wall. Start where the examiner starts.</p>
-        <span onClick="{{ goSignup }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:9px; background:#0FB5A6; color:#fff; font-size:16.5px; font-weight:600; padding:16px 32px; border-radius:12px;">Try a free case <span>→</span></span>
+        <span onClick="{{ goCase }}" style="cursor:pointer; display:inline-flex; align-items:center; gap:9px; background:#0FB5A6; color:#fff; font-size:16.5px; font-weight:600; padding:16px 32px; border-radius:12px;">Try a free case <span>→</span></span>
       </div>
     </section>
 
@@ -480,6 +479,7 @@ class Component extends DCLogic {
       onEmailB: (e) => this.setState({ emailB: e.target.value }),
       submitA: () => { if (/.+@.+\..+/.test(this.state.emailA)) this._sendToBrevo(this.state.emailA, () => this.setState({ submittedA: true })); },
       goSignup: () => { const el = document.getElementById('vo-signup'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); },
+      goCase: () => { const el = document.getElementById('vo-case'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); },
       submitB: () => { if (/.+@.+\..+/.test(this.state.emailB)) this._sendToBrevo(this.state.emailB, () => this.setState({ submittedB: true })); },
       examOpts,
       examAStr: String(this.state.examA),
