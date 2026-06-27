@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#0B1220">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B1220"/>
+    <circle cx="600" cy="400" r="200" fill="none" stroke="#0FB5A6" stroke-width="6" opacity="0.25"/>
+    <circle cx="600" cy="400" r="150" fill="none" stroke="#0FB5A6" stroke-width="6" opacity="0.45"/>
+    <circle cx="600" cy="400" r="150" fill="none" stroke="#0FB5A6" stroke-width="22" stroke-linecap="round" stroke-dasharray="942" stroke-dashoffset="207" transform="rotate(-90 600 400)"/>
+    <circle cx="600" cy="400" r="60" fill="#0FB5A6"/>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .vo { font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .serif { font-family: 'Newsreader', Georgia, serif; }
+</style>
+</helmet>
+
+<div class="vo" data-screen-label="Landing (Light)" style="max-width:1440px; margin:0 auto; background:#F7F8FA; color:#0E1726; overflow:hidden;">
+
+    <!-- Topbar -->
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; border-bottom:1px solid #E7EBF1; background:rgba(247,248,250,.85);">
+      <div style="display:flex; align-items:center; gap:11px;">
+        <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".35"/><circle cx="13" cy="13" r="8" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".55"/><circle cx="13" cy="13" r="3.4" fill="#0E1726"/></svg>
+        <span style="font-size:18px; font-weight:600; letter-spacing:-.01em;">VivaOphtho</span>
+      </div>
+      <nav style="display:flex; align-items:center; gap:34px; font-size:14.5px; font-weight:450; color:#42505F;">
+        <span>How it works</span><span>Exams</span><span>Free cases</span><span>Pricing</span>
+      </nav>
+      <div style="display:flex; align-items:center; gap:20px;">
+        <span style="display:inline-flex; align-items:center; gap:8px; cursor:pointer; font-size:14.5px; font-weight:500; color:#42505F;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="#42505F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="#42505F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Notify me
+        </span>
+        <span style="display:inline-flex; align-items:center; gap:8px; background:#0FB5A6; color:#fff; font-size:14.5px; font-weight:600; padding:11px 20px; border-radius:9px; box-shadow:0 6px 16px -6px rgba(15,181,166,.6);">Try a free case</span>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section style="display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center; padding:84px 56px 78px;">
+      <div>
+        <div style="display:inline-flex; align-items:center; gap:9px; font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#0FB5A6; margin-bottom:24px;">
+          <span style="width:18px; height:1px; background:#0FB5A6; display:inline-block;"></span>Examiner-style ophthalmology cases
+        </div>
+        <h1 class="serif" style="font-size:62px; line-height:1.04; font-weight:500; letter-spacing:-.02em; margin:0 0 24px;">Practise the viva,<br>not just the MCQs.</h1>
+        <p style="font-size:19px; line-height:1.55; color:#46535F; max-width:520px; margin:0 0 34px; font-weight:400;">Branching, examiner-grade clinical cases for EBO, FRCOphth, ICO and ABO orals. Sit across from the examiner — calmly, repeatedly — before you sit the exam.</p>
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:18px;">
+          <span style="display:inline-flex; align-items:center; gap:9px; background:#0E1726; color:#fff; font-size:16px; font-weight:600; padding:15px 26px; border-radius:11px;">Try a free case <span style="color:#0FB5A6;">→</span></span>
+          <span style="display:inline-flex; align-items:center; gap:9px; color:#0E1726; font-size:16px; font-weight:500; padding:15px 22px; border-radius:11px; border:1px solid #D5DBE3;">See how it works</span>
+        </div>
+        <p style="font-size:13.5px; color:#7A8492; margin:0; display:flex; align-items:center; gap:8px;"><span style="width:6px;height:6px;border-radius:50%;background:#1FA971;display:inline-block;"></span>No signup. The free case runs the real Case Player, end to end.</p>
+      </div>
+
+      <!-- Readiness ring panel -->
+      <div style="background:#fff; border:1px solid #E7EBF1; border-radius:20px; padding:38px 40px; box-shadow:0 30px 60px -36px rgba(14,23,38,.3);">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+          <span style="font-size:13px; font-weight:600; color:#42505F;">EBO blueprint readiness</span>
+          <span style="font-size:12px; font-weight:600; color:#0FB5A6; background:#E6F7F5; padding:4px 10px; border-radius:20px;">47 days to exam</span>
+        </div>
+        <div style="display:flex; justify-content:center; padding:14px 0 8px;">
+          <svg width="232" height="232" viewBox="0 0 240 240" aria-label="78 percent ready">
+            <circle cx="120" cy="120" r="112" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".10"/>
+            <circle cx="120" cy="120" r="103" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".10"/>
+            <circle cx="120" cy="120" r="90" fill="none" stroke="#EAEEF3" stroke-width="15"/>
+            <circle cx="120" cy="120" r="90" fill="none" stroke="#0FB5A6" stroke-width="15" stroke-linecap="round" stroke-dasharray="565.49" stroke-dashoffset="124.4" transform="rotate(-90 120 120)"/>
+            <text x="120" y="116" text-anchor="middle" class="serif" font-size="58" font-weight="500" fill="#0E1726">78%</text>
+            <text x="120" y="146" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" letter-spacing=".06em" fill="#7A8492">READY</text>
+          </svg>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:8px;">
+          <div style="flex:1; background:#FBF7EA; border:1px solid #ECE3C4; border-radius:12px; padding:14px 16px;">
+            <div style="display:flex; align-items:center; gap:7px; font-size:12.5px; font-weight:600; color:#9A7E14;"><span style="width:9px;height:9px;border-radius:50%;border:2px solid #C9A227;display:inline-block;"></span>Mastered</div>
+            <div class="serif" style="font-size:30px; font-weight:500; margin-top:4px;">34</div>
+          </div>
+          <div style="flex:1; background:#F4F6F9; border:1px solid #E7EBF1; border-radius:12px; padding:14px 16px;">
+            <div style="font-size:12.5px; font-weight:600; color:#5A6678;">Attempted</div>
+            <div class="serif" style="font-size:30px; font-weight:500; margin-top:4px;">61</div>
+          </div>
+        </div>
+        <p style="font-size:12.5px; color:#7A8492; margin:16px 0 0; line-height:1.5;">Mastered leads — and only counts after a passed <em>delayed</em> re-test. Earned, not clicked.</p>
+      </div>
+    </section>
+
+    <!-- Notify / under construction -->
+    <section style="padding:0 56px 84px;">
+      <div style="position:relative; overflow:hidden; background:linear-gradient(120deg,#0E1726,#15294A); border-radius:22px; padding:60px 56px;">
+        <svg width="420" height="420" viewBox="0 0 420 420" style="position:absolute; right:-90px; top:-120px; opacity:.5;" aria-hidden="true">
+          <circle cx="210" cy="210" r="200" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".10"/>
+          <circle cx="210" cy="210" r="160" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".12"/>
+          <circle cx="210" cy="210" r="118" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".14"/>
+          <circle cx="210" cy="210" r="76" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".16"/>
+        </svg>
+        <div style="position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:50px; align-items:center;">
+          <div>
+            <span style="display:inline-flex; align-items:center; gap:9px; font-size:12.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#5FD3C8; margin-bottom:18px;">
+              <span style="width:7px; height:7px; border-radius:50%; background:#0FB5A6; display:inline-block; box-shadow:0 0 0 4px rgba(15,181,166,.2);"></span>Under construction
+            </span>
+            <h2 class="serif" style="font-size:48px; line-height:1.05; font-weight:500; letter-spacing:-.02em; color:#fff; margin:0 0 16px;">VivaOphtho is being built,<br>case by case.</h2>
+            <p style="font-size:17px; line-height:1.55; color:#A6B4C6; margin:0 0 30px; max-width:480px;">Choose your exam target and we’ll count down to your date — then tell you the moment the first free examiner-style cases are ready.</p>
+
+            <div style="font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#7C8A9C; margin-bottom:12px;">Counting down to exam day</div>
+            <div style="display:flex; gap:12px;">
+              <div style="flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:18px 0; text-align:center;">
+                <div class="serif" style="font-size:40px; font-weight:500; color:#fff; line-height:1; font-variant-numeric:tabular-nums;">{{ cdA.d }}</div>
+                <div style="font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#7C8A9C; margin-top:9px;">Days</div>
+              </div>
+              <div style="flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:18px 0; text-align:center;">
+                <div class="serif" style="font-size:40px; font-weight:500; color:#fff; line-height:1; font-variant-numeric:tabular-nums;">{{ cdA.h }}</div>
+                <div style="font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#7C8A9C; margin-top:9px;">Hours</div>
+              </div>
+              <div style="flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:18px 0; text-align:center;">
+                <div class="serif" style="font-size:40px; font-weight:500; color:#fff; line-height:1; font-variant-numeric:tabular-nums;">{{ cdA.m }}</div>
+                <div style="font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#7C8A9C; margin-top:9px;">Mins</div>
+              </div>
+              <div style="flex:1; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:14px; padding:18px 0; text-align:center;">
+                <div class="serif" style="font-size:40px; font-weight:500; color:#5FD3C8; line-height:1; font-variant-numeric:tabular-nums;">{{ cdA.s }}</div>
+                <div style="font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#7C8A9C; margin-top:9px;">Secs</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.1); border-radius:18px; padding:30px;">
+            <label style="display:block; font-size:13px; font-weight:600; color:#C7D2E0; margin-bottom:9px;">Exam target</label>
+            <select value="{{ examAStr }}" onChange="{{ onExamA }}" style="width:100%; font-family:'Inter',sans-serif; font-size:15.5px; font-weight:500; color:#fff; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.16); border-radius:11px; padding:15px 16px; outline:none; color-scheme:dark; cursor:pointer; margin-bottom:22px;">
+              <sc-for list="{{ examOpts }}" as="o" hint-placeholder-count="4">
+                <option value="{{ o.value }}">{{ o.label }}</option>
+              </sc-for>
+            </select>
+
+            <label style="display:block; font-size:13px; font-weight:600; color:#C7D2E0; margin-bottom:9px;">Email</label>
+            <sc-if value="{{ notSubmittedA }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex; gap:10px;">
+                <input value="{{ emailA }}" onChange="{{ onEmailA }}" type="email" placeholder="doctor@example.com" style="flex:1; min-width:0; font-family:'Inter',sans-serif; font-size:15.5px; color:#fff; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.16); border-radius:11px; padding:15px 16px; outline:none;" style-focus="border-color:#0FB5A6; background:rgba(255,255,255,.08);" />
+                <span onClick="{{ submitA }}" style="display:inline-flex; align-items:center; cursor:pointer; background:#0FB5A6; color:#04201D; font-size:15.5px; font-weight:600; padding:15px 22px; border-radius:11px; white-space:nowrap;">Notify me</span>
+              </div>
+              <p style="font-size:12.5px; color:#7C8A9C; margin:12px 0 0;">No spam. Just launch updates and new free cases.</p>
+            </sc-if>
+            <sc-if value="{{ submittedA }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; align-items:center; gap:13px; background:rgba(31,169,113,.12); border:1px solid rgba(31,169,113,.35); border-radius:12px; padding:16px 18px;">
+                <span style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#1FA971; display:flex; align-items:center; justify-content:center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <div style="font-size:15px; font-weight:600; color:#fff;">You’re on the list.</div>
+                  <div style="font-size:13px; color:#A6B4C6; margin-top:2px;">We’ll email <span style="color:#5FD3C8;">{{ emailA }}</span> before your exam.</div>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam strip -->
+    <section style="padding:0 56px 80px;">
+      <div style="background:#0E1726; border-radius:18px; padding:42px 48px; color:#E8EDF4; display:grid; grid-template-columns:1fr auto; gap:40px; align-items:center;">
+        <div>
+          <h2 class="serif" style="font-size:30px; font-weight:500; margin:0 0 10px; letter-spacing:-.01em;">One format. Many exams.</h2>
+          <p style="font-size:16px; line-height:1.55; color:#9DAABB; margin:0; max-width:560px;">The viva is the common denominator across systems. One case library, reshaped to your blueprint, your cohort, and your exam date.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; gap:10px;">
+            <span style="border:1px solid rgba(255,255,255,.16); color:#E8EDF4; font-size:15px; font-weight:600; padding:11px 22px; border-radius:30px;">EBO</span>
+            <span style="border:1px solid rgba(255,255,255,.16); color:#E8EDF4; font-size:15px; font-weight:600; padding:11px 22px; border-radius:30px;">FRCOphth</span>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <span style="border:1px solid rgba(255,255,255,.16); color:#E8EDF4; font-size:15px; font-weight:600; padding:11px 22px; border-radius:30px;">ICO clinical</span>
+            <span style="border:1px solid rgba(255,255,255,.16); color:#E8EDF4; font-size:15px; font-weight:600; padding:11px 22px; border-radius:30px;">ABO oral</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8-step format -->
+    <section style="padding:0 56px 86px;">
+      <div style="max-width:680px; margin-bottom:48px;">
+        <div style="font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#0FB5A6; margin-bottom:16px;">The case is the hero</div>
+        <h2 class="serif" style="font-size:42px; line-height:1.1; font-weight:500; letter-spacing:-.02em; margin:0 0 16px;">Eight steps. One case. The whole exam in miniature.</h2>
+        <p style="font-size:17px; line-height:1.6; color:#46535F; margin:0;">The screen never shows the next step until you commit. That withholding <em>is</em> the viva — and the branching beneath it means no two run-throughs probe quite the same way.</p>
+      </div>
+
+      <div style="position:relative; display:grid; grid-template-columns:repeat(8,1fr); margin:0 12px;">
+        <div style="position:absolute; top:22px; left:6.25%; right:6.25%; height:2px; background:#E1E6ED;"></div>
+        <sc-for list="{{ steps }}" as="s" hint-placeholder-count="8">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:14px; position:relative; z-index:1;">
+            <div style="width:46px; height:46px; border-radius:50%; background:#F7F8FA; border:2px solid #0FB5A6; color:#0E1726; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600;">{{ s.n }}</div>
+            <div style="font-size:13px; font-weight:500; color:#46535F; text-align:center; line-height:1.3; max-width:96px;">{{ s.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- Case Player (the hero screen) -->
+    <section style="padding:0 56px 90px;">
+      <div style="display:flex; background:#fff; border:1px solid #E7EBF1; border-radius:20px; overflow:hidden; box-shadow:0 30px 60px -40px rgba(14,23,38,.28); min-height:560px;">
+
+        <sc-if value="{{ notFocusA }}" hint-placeholder-val="{{ true }}">
+          <div style="width:248px; flex-shrink:0; background:#F7F8FA; border-right:1px solid #EEF1F5; padding:36px 30px;">
+            <div style="font-size:11.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#9AA4B2; margin-bottom:28px;">Free case</div>
+            <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+              <span style="width:22px; height:22px; border-radius:50%; background:#0FB5A6; flex-shrink:0; box-shadow:0 0 0 4px rgba(15,181,166,.15);"></span>
+              <span style="font-size:15.5px; font-weight:600; color:#0E1726;">Presentation</span>
+            </div>
+            <sc-for list="{{ restSteps }}" as="s" hint-placeholder-count="7">
+              <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+                <span style="width:22px; height:22px; border-radius:50%; border:2px solid #D7DDE5; flex-shrink:0;"></span>
+                <span style="font-size:15.5px; font-weight:500; color:#8A94A2;">{{ s.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <div style="flex:1; padding:46px 52px;">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:20px; margin-bottom:14px;">
+            <div style="font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#0FB5A6;">EBO viva practice case · Retina</div>
+            <sc-if value="{{ notFocusA }}" hint-placeholder-val="{{ true }}">
+              <span onClick="{{ toggleFocusA }}" style="flex-shrink:0; cursor:pointer; font-size:13.5px; font-weight:600; color:#46535F; border:1px solid #D5DBE3; border-radius:9px; padding:8px 16px;" style-hover="border-color:#0FB5A6; color:#0FB5A6;">Focus</span>
+            </sc-if>
+            <sc-if value="{{ focusA }}" hint-placeholder-val="{{ false }}">
+              <span onClick="{{ toggleFocusA }}" style="flex-shrink:0; cursor:pointer; font-size:13.5px; font-weight:600; color:#0FB5A6; border:1px solid #0FB5A6; border-radius:9px; padding:8px 16px;">Exit focus</span>
+            </sc-if>
+          </div>
+          <h2 class="serif" style="font-size:40px; line-height:1.08; font-weight:500; letter-spacing:-.02em; margin:0 0 26px;">Branch retinal vein occlusion</h2>
+
+          <div style="background:#F8FAFC; border:1px solid #E7EBF1; border-left:4px solid #0E1726; border-radius:14px; padding:28px 30px; margin-bottom:30px;">
+            <p class="serif" style="font-size:23px; line-height:1.5; color:#0E1726; margin:0;">You are shown a 62-year-old patient with sudden painless blurring in one eye. Fundus shows sectoral haemorrhages and macular oedema. Present the case to the examiner.</p>
+          </div>
+
+          <div style="font-size:13px; font-weight:600; color:#42505F; margin-bottom:10px;">Your answer</div>
+          <textarea value="{{ answerA }}" onChange="{{ onAnswerA }}" placeholder="Type your answer as you would say it to the examiner." style="width:100%; min-height:128px; resize:vertical; font-family:'Inter',sans-serif; font-size:15.5px; line-height:1.55; color:#0E1726; background:#fff; border:1px solid #D8DEE6; border-radius:12px; padding:16px 18px; outline:none; box-sizing:border-box; margin-bottom:18px;" style-focus="border-color:#0FB5A6;"></textarea>
+
+          <sc-if value="{{ notCommittedA }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex; gap:12px;">
+              <span onClick="{{ commitA }}" style="display:inline-flex; align-items:center; cursor:pointer; background:#0FB5A6; color:#04201D; font-size:15.5px; font-weight:600; padding:14px 26px; border-radius:11px;">Commit answer</span>
+              <span onClick="{{ sampleA }}" style="display:inline-flex; align-items:center; cursor:pointer; color:#0E1726; font-size:15.5px; font-weight:600; padding:14px 24px; border-radius:11px; border:1px solid #D5DBE3;" style-hover="border-color:#0FB5A6;">Use sample answer</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ committedA }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#0E1726; border-radius:14px; padding:24px 26px; margin-bottom:16px;">
+              <div style="font-size:11.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:#5FD3C8; margin-bottom:10px;">Model answer · examiner voice</div>
+              <p class="serif" style="font-size:17px; line-height:1.55; color:#E8EDF4; margin:0;">A strong candidate localises it: sectoral intraretinal haemorrhages and cotton-wool spots stopping at the horizontal raphe, a dilated tortuous draining vein, and macular oedema as the cause of the drop in vision — a branch retinal vein occlusion. <span style="color:#E8B84B;">The curveball to anticipate: neovascularisation and the ischaemic index.</span></p>
+            </div>
+            <div style="display:flex; gap:10px;">
+              <span style="flex:1; text-align:center; cursor:pointer; font-size:14px; font-weight:600; color:#1FA971; background:#E8F6EF; border:1px solid #BFE6D2; padding:13px; border-radius:11px;">Got it</span>
+              <span style="flex:1; text-align:center; cursor:pointer; font-size:14px; font-weight:600; color:#9A7414; background:#FBF3DE; border:1px solid #ECDDB0; padding:13px; border-radius:11px;">Partial</span>
+              <span style="flex:1; text-align:center; cursor:pointer; font-size:14px; font-weight:600; color:#C0463E; background:#FBECEB; border:1px solid #F0C9C6; padding:13px; border-radius:11px;">Missed</span>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+
+    <!-- Readiness & mastery principles -->
+    <section style="padding:0 56px 90px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+        <div style="background:#fff; border:1px solid #E7EBF1; border-radius:18px; padding:40px;">
+          <div style="width:44px; height:44px; border-radius:12px; background:#E6F7F5; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">
+            <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="#0FB5A6" stroke-width="2.4" stroke-dasharray="63" stroke-dashoffset="16" stroke-linecap="round" transform="rotate(-90 12 12)"/></svg>
+          </div>
+          <h3 class="serif" style="font-size:25px; font-weight:500; margin:0 0 12px;">Lead with readiness, not ranking.</h3>
+          <p style="font-size:15.5px; line-height:1.6; color:#5A6678; margin:0;">The primary number everywhere is your personal exam-readiness — framed as “78% ready,” never “42 cases left.” No leaderboards to churn an already-anxious cohort.</p>
+        </div>
+        <div style="background:#fff; border:1px solid #ECE3C4; border-radius:18px; padding:40px;">
+          <div style="width:44px; height:44px; border-radius:12px; background:#FBF7EA; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">
+            <span style="width:18px; height:18px; border-radius:50%; border:3px solid #C9A227; display:inline-block;"></span>
+          </div>
+          <h3 class="serif" style="font-size:25px; font-weight:500; margin:0 0 12px;">Mastered &gt; done.</h3>
+          <p style="font-size:15.5px; line-height:1.6; color:#5A6678; margin:0;">A case only turns <span style="color:#9A7E14; font-weight:600;">gold</span> after you pass a <em>delayed</em> re-test — never on first pass. Mastery is stored value you can see accruing, not a vanity click-through.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam map / blueprint coverage -->
+    <section style="padding:0 56px 86px;">
+      <div style="font-size:12.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#0FB5A6; margin-bottom:16px;">Blueprint coverage</div>
+      <h2 class="serif" style="font-size:48px; line-height:1.05; font-weight:500; letter-spacing:-.02em; margin:0 0 22px;">Coverage across the exam map.</h2>
+      <p style="font-size:17.5px; line-height:1.6; color:#5A6678; margin:0 0 44px; max-width:640px;">The final app will turn your weakest blueprint cells into the next thing to practise, so the choice burden stays low when exam pressure is high.</p>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:18px;">
+        <sc-for list="{{ subs }}" as="g" hint-placeholder-count="8">
+          <div style="background:#fff; border:1px solid #E7EBF1; border-radius:14px; padding:24px 26px;">
+            <div style="font-size:16px; font-weight:700; color:#0E1726; margin-bottom:16px;">{{ g.name }}</div>
+            <div style="height:7px; border-radius:5px; background:#E6E8EC; overflow:hidden; margin-bottom:14px;">
+              <div style="height:100%; width:{{ g.pct }}; background:#16B197; border-radius:5px;"></div>
+            </div>
+            <div style="font-size:13.5px; color:#7A8492;">{{ g.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section style="padding:0 56px 88px;">
+      <div style="background:#EEEDE8; border-radius:24px; padding:60px 56px;">
+        <div style="font-size:12.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#0FB5A6; margin-bottom:16px;">After value is felt</div>
+        <h2 class="serif" style="font-size:48px; line-height:1.05; font-weight:500; letter-spacing:-.02em; margin:0 0 40px;">Pricing that matches the<br>exam cycle.</h2>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px;">
+          <!-- 6 month -->
+          <div style="background:#FBFAF7; border:1px solid #E2E0D8; border-radius:18px; padding:38px 40px;">
+            <div style="font-size:16px; font-weight:700; color:#0E1726; margin-bottom:14px;">6-month pass</div>
+            <div class="serif" style="font-size:54px; font-weight:500; color:#0E1726; line-height:1; margin-bottom:14px;">€179</div>
+            <p style="font-size:15.5px; line-height:1.55; color:#5A6678; margin:0 0 26px;">For candidates already inside the final preparation window.</p>
+            <div style="display:flex; flex-direction:column; gap:13px; margin-bottom:30px;">
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#2C3845;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#0FB5A6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full case library, every subspecialty</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#2C3845;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#0FB5A6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Spaced-retrieval re-tests</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#2C3845;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#0FB5A6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Blueprint coverage map</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#2C3845;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#0FB5A6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Personal readiness tracking</div>
+            </div>
+            <span style="display:block; text-align:center; cursor:pointer; font-size:15.5px; font-weight:600; color:#0E1726; border:1px solid #CFCDC3; border-radius:11px; padding:14px;" style-hover="border-color:#0FB5A6; color:#0FB5A6;">Choose 6-month</span>
+          </div>
+          <!-- 12 month featured -->
+          <div style="background:#0E1726; border-radius:18px; padding:38px 40px; position:relative;">
+            <span style="position:absolute; top:30px; right:30px; font-size:11.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:#04201D; background:#0FB5A6; padding:6px 12px; border-radius:20px;">Best value</span>
+            <div style="font-size:16px; font-weight:700; color:#fff; margin-bottom:14px;">12-month pass</div>
+            <div class="serif" style="font-size:54px; font-weight:500; color:#fff; line-height:1; margin-bottom:14px;">€249</div>
+            <p style="font-size:15.5px; line-height:1.55; color:#9DAABB; margin:0 0 26px;">For a full cycle of cases, re-tests, blueprint coverage and readiness tracking.</p>
+            <div style="display:flex; flex-direction:column; gap:13px; margin-bottom:30px;">
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#D6DEE8;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#5FD3C8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in the 6-month pass</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#D6DEE8;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#5FD3C8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Covers a complete exam cycle</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#D6DEE8;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#5FD3C8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>First access to new cases</div>
+              <div style="display:flex; align-items:center; gap:11px; font-size:15px; color:#D6DEE8;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#5FD3C8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Best value — about €20 / month</div>
+            </div>
+            <span style="display:block; text-align:center; cursor:pointer; font-size:15.5px; font-weight:600; color:#04201D; background:#0FB5A6; border-radius:11px; padding:14px;">Choose 12-month</span>
+          </div>
+        </div>
+        <p style="font-size:13.5px; color:#7A8492; margin:26px 0 0; max-width:760px;">Regional pricing is auto-detected for India, Africa and SE Asia. You already pay ~€600 to sit the exam — this is a fraction of it. No fake countdowns; the only deadline is your real exam date.</p>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section style="padding:0 56px 80px;">
+      <div style="background:linear-gradient(120deg,#0E1726,#13243B); border-radius:20px; padding:64px 56px; text-align:center;">
+        <h2 class="serif" style="font-size:40px; font-weight:500; letter-spacing:-.02em; color:#fff; margin:0 0 16px;">Build your readiness map from one case.</h2>
+        <p style="font-size:17px; color:#9DAABB; margin:0 0 32px;">No signup wall. Start where the examiner starts.</p>
+        <span style="display:inline-flex; align-items:center; gap:9px; background:#0FB5A6; color:#fff; font-size:16.5px; font-weight:600; padding:16px 32px; border-radius:12px;">Try a free case <span>→</span></span>
+      </div>
+    </section>
+
+    <!-- Follow along -->
+    <section style="padding:8px 56px 88px; text-align:center;">
+      <div style="font-size:12.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:#0FB5A6; margin-bottom:18px;">Follow along</div>
+      <h2 class="serif" style="font-size:42px; line-height:1.12; font-weight:500; letter-spacing:-.02em; margin:0 auto 18px; max-width:760px;">We’re publishing complete cases — free.</h2>
+      <p style="font-size:17.5px; line-height:1.6; color:#46535F; margin:0 auto 36px; max-width:740px;">New examiner-style cases land on our feeds every week. Follow for the free ones, and join the waitlist to get the full app — readiness tracking and adaptive re-testing — at launch.</p>
+      <div style="display:flex; align-items:center; justify-content:center; gap:14px;">
+        <span style="display:inline-flex; align-items:center; gap:11px; cursor:pointer; border:1px solid #D5DBE3; border-radius:40px; padding:15px 26px; font-size:16px; font-weight:600; color:#0E1726;" style-hover="border-color:#0FB5A6; color:#0FB5A6;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          Instagram
+        </span>
+        <span style="display:inline-flex; align-items:center; gap:11px; cursor:pointer; border:1px solid #D5DBE3; border-radius:40px; padding:15px 26px; font-size:16px; font-weight:600; color:#0E1726;" style-hover="border-color:#0FB5A6; color:#0FB5A6;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X / Twitter
+        </span>
+        <span style="display:inline-flex; align-items:center; gap:11px; cursor:pointer; border:1px solid #D5DBE3; border-radius:40px; padding:15px 26px; font-size:16px; font-weight:600; color:#0E1726;" style-hover="border-color:#0FB5A6; color:#0FB5A6;">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
+          LinkedIn
+        </span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding:36px 56px; border-top:1px solid #E7EBF1; display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <svg width="20" height="20" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="none" stroke="#0FB5A6" stroke-width="1" opacity=".4"/><circle cx="13" cy="13" r="3.4" fill="#0E1726"/></svg>
+        <span style="font-size:13.5px; color:#7A8492;">VivaOphtho — examiner-style cases for English-language ophthalmology vivas.</span>
+      </div>
+      <div style="display:flex; gap:26px; font-size:13.5px; color:#7A8492;"><span>Cases by exam</span><span>Pricing</span><span>About</span></div>
+    </footer>
+  </div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { revealA: false, revealB: false, emailA: '', emailB: '', submittedA: false, submittedB: false, examA: 0, examB: 0, now: Date.now(),
+    answerA: '', answerB: '', committedA: false, committedB: false, focusA: false, focusB: false };
+  componentDidMount() { this._t = setInterval(() => this.setState({ now: Date.now() }), 1000); }
+  componentWillUnmount() { clearInterval(this._t); }
+  renderVals() {
+    const exams = [
+      { label: 'FRCOphth Oral · 29 Sep 2026', date: '2026-09-29T09:00:00' },
+      { label: 'ICO Clinical · 12 Nov 2026', date: '2026-11-12T09:00:00' },
+      { label: 'ABO Oral · 14 Dec 2026', date: '2026-12-14T09:00:00' },
+      { label: 'EBO Diploma · 7 May 2027', date: '2027-05-07T09:00:00' },
+    ];
+    const examOpts = exams.map((e, i) => ({ value: String(i), label: e.label }));
+    const cd = (idx) => {
+      const ms = Math.max(0, new Date(exams[idx].date).getTime() - this.state.now);
+      return {
+        d: String(Math.floor(ms / 86400000)),
+        h: String(Math.floor(ms / 3600000) % 24).padStart(2, '0'),
+        m: String(Math.floor(ms / 60000) % 60).padStart(2, '0'),
+        s: String(Math.floor(ms / 1000) % 60).padStart(2, '0'),
+      };
+    };
+    const sample = "This is a 62-year-old with sudden, painless, unilateral blurring. Fundus shows sectoral intraretinal haemorrhages and macular oedema respecting the horizontal raphe — a picture of branch retinal vein occlusion. I'd document acuity, check for an RAPD, and look carefully for any neovascularisation.";
+    const steps = [
+      { n: 1, label: 'Presentation' },
+      { n: 2, label: 'History' },
+      { n: 3, label: 'Examination' },
+      { n: 4, label: 'Differential' },
+      { n: 5, label: 'Investigations' },
+      { n: 6, label: 'Interpretation' },
+      { n: 7, label: 'Management' },
+      { n: 8, label: 'Curveball' },
+    ];
+    const dots = [0,1,2].map(() => ({ bg: '#0FB5A6' }))
+      .concat([3,4,5,6,7].map(() => ({ bg: '#D7DDE5' })));
+    const subs = [
+      { name: 'Cornea', pct: '72%', label: '8 mastered · 11 cases' },
+      { name: 'Retina', pct: '64%', label: '9 mastered · 14 cases' },
+      { name: 'Glaucoma', pct: '58%', label: '6 mastered · 10 cases' },
+      { name: 'Neuro-ophth', pct: '41%', label: '4 mastered · 9 cases' },
+      { name: 'Paediatrics', pct: '36%', label: '3 mastered · 8 cases' },
+      { name: 'Oculoplastics', pct: '50%', label: '5 mastered · 9 cases' },
+      { name: 'Cataract / Refr.', pct: '80%', label: '8 mastered · 10 cases' },
+      { name: 'Uveitis', pct: '45%', label: '4 mastered · 8 cases' },
+    ];
+    return {
+      steps, dots, subs,
+      revealA: this.state.revealA,
+      revealB: this.state.revealB,
+      notRevealedA: !this.state.revealA,
+      notRevealedB: !this.state.revealB,
+      toggleA: () => this.setState(s => ({ revealA: !s.revealA })),
+      toggleB: () => this.setState(s => ({ revealB: !s.revealB })),
+      emailA: this.state.emailA,
+      emailB: this.state.emailB,
+      submittedA: this.state.submittedA,
+      submittedB: this.state.submittedB,
+      notSubmittedA: !this.state.submittedA,
+      notSubmittedB: !this.state.submittedB,
+      onEmailA: (e) => this.setState({ emailA: e.target.value }),
+      onEmailB: (e) => this.setState({ emailB: e.target.value }),
+      submitA: () => { if (/.+@.+\..+/.test(this.state.emailA)) this.setState({ submittedA: true }); },
+      submitB: () => { if (/.+@.+\..+/.test(this.state.emailB)) this.setState({ submittedB: true }); },
+      examOpts,
+      examAStr: String(this.state.examA),
+      examBStr: String(this.state.examB),
+      onExamA: (e) => this.setState({ examA: Number(e.target.value) }),
+      onExamB: (e) => this.setState({ examB: Number(e.target.value) }),
+      cdA: cd(this.state.examA),
+      cdB: cd(this.state.examB),
+      restSteps: steps.slice(1),
+      answerA: this.state.answerA,
+      answerB: this.state.answerB,
+      onAnswerA: (e) => this.setState({ answerA: e.target.value }),
+      onAnswerB: (e) => this.setState({ answerB: e.target.value }),
+      sampleA: () => this.setState({ answerA: sample }),
+      sampleB: () => this.setState({ answerB: sample }),
+      commitA: () => this.setState({ committedA: true }),
+      commitB: () => this.setState({ committedB: true }),
+      committedA: this.state.committedA,
+      committedB: this.state.committedB,
+      notCommittedA: !this.state.committedA,
+      notCommittedB: !this.state.committedB,
+      focusA: this.state.focusA,
+      focusB: this.state.focusB,
+      notFocusA: !this.state.focusA,
+      notFocusB: !this.state.focusB,
+      toggleFocusA: () => this.setState(s => ({ focusA: !s.focusA })),
+      toggleFocusB: () => this.setState(s => ({ focusB: !s.focusB })),
+    };
+  }
+}
+</script>
+</body>
+</html>
