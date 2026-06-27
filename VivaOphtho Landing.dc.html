@@ -33,6 +33,25 @@
   body { margin: 0; }
   .vo { font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
   .serif { font-family: 'Newsreader', Georgia, serif; }
+  @media (max-width: 760px) {
+    .vo { overflow-x: hidden !important; max-width: 100% !important; }
+    .vo > header { padding: 14px 18px !important; flex-wrap: wrap !important; gap: 10px !important; }
+    .vo > header > nav { display: none !important; }
+    .vo > section { padding-left: 18px !important; padding-right: 18px !important; padding-top: 40px !important; padding-bottom: 40px !important; }
+    .vo [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+    .vo [style*="repeat(8"] { grid-template-columns: repeat(4, 1fr) !important; row-gap: 18px !important; }
+    .vo [style*="repeat(8"] > [style*="position: absolute"] { display: none !important; }
+    .vo [style*="repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
+    .vo [style*="gap: 56px"], .vo [style*="gap: 50px"], .vo [style*="gap: 48px"], .vo [style*="gap: 40px"] { gap: 24px !important; }
+    .vo [style*="padding: 60px 56px"], .vo [style*="padding: 64px 56px"], .vo [style*="padding: 42px 48px"], .vo [style*="padding: 38px 40px"], .vo [style*="padding: 40px"], .vo [style*="padding: 46px 52px"], .vo [style*="padding: 36px 30px"], .vo [style*="padding: 30px"] { padding: 24px 20px !important; }
+    .vo h1 { font-size: 34px !important; line-height: 1.12 !important; }
+    .vo h2 { font-size: 26px !important; line-height: 1.18 !important; }
+    .vo h3 { font-size: 19px !important; }
+    .vo [style*="display: flex"] { flex-wrap: wrap !important; }
+    .vo [style*="min-height: 560px"] { flex-direction: column !important; min-height: 0 !important; flex-wrap: nowrap !important; }
+    .vo [style*="width: 248px"] { width: 100% !important; box-sizing: border-box !important; }
+    .vo svg[width="232"] { width: 168px !important; height: 168px !important; }
+  }
 </style>
 </helmet>
 
