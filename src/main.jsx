@@ -73,7 +73,9 @@ function App() {
       <main id="top">
         <Hero />
         <TrustStrip />
+        <ExamFormatSection />
         <Positioning />
+        <HowItWorksSection />
         <Principles />
         <CasePlayer countdown={countdown.label} />
         <CaseLibrary />
@@ -92,7 +94,7 @@ function Header({ countdown }) {
     <header className="site-header">
       <a className="brand" href="#top" aria-label="VivaOphtho home"><span className="brand-mark" aria-hidden="true" /><span>VivaOphtho</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#free-case">Free case</a><a href="#cases">Cases</a><a href="#notify">Notify me</a><a href="#pricing">Pricing</a>
+        <a href="#how-it-works">How it works</a><a href="#exams">Exams</a><a href="#cases">Free cases</a><a href="#pricing">Pricing</a>
       </nav>
       <a className="header-pill" href="#notify">{countdown}</a>
     </header>
@@ -129,6 +131,71 @@ function Positioning() {
     <section className="section intro-grid" aria-label="What VivaOphtho does">
       <div><p className="eyebrow">Not another question bank</p><h2>Your Qbank teaches recognition. The viva tests reasoning, out loud.</h2></div>
       <p>Incumbents are MCQ engines; their oral offering is usually an afterthought. VivaOphtho is only viva cases, at examiner depth: commit to an answer, reveal the model response, self-score honestly, and let the next prompt probe your gaps.</p>
+    </section>
+  );
+}
+
+function ExamFormatSection() {
+  return (
+    <section className="section exam-format-section" id="exams" aria-labelledby="exam-format-title">
+      <div>
+        <p className="eyebrow">One format. Many exams.</p>
+        <h2 id="exam-format-title">The viva is the common denominator.</h2>
+        <p>
+          EBO, FRCOphth, ICO-style clinical exams and ABO orals differ in
+          blueprint and ceremony, but the pressure is familiar: reason through a
+          case, speak clearly, and handle the next examiner prompt.
+        </p>
+      </div>
+      <div className="exam-grid" aria-label="Supported exam targets">
+        {["EBO", "FRCOphth", "ICO clinical", "ABO oral"].map((exam) => (
+          <article key={exam}>
+            <span>{exam}</span>
+            <p>Blueprint-aware viva cases</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function HowItWorksSection() {
+  return (
+    <section className="section how-section" id="how-it-works" aria-labelledby="how-title">
+      <div className="section-heading">
+        <p className="eyebrow">Eight steps. One case.</p>
+        <h2 id="how-title">The whole exam in miniature.</h2>
+        <p>
+          Each case withholds the next prompt until you commit. That uncertainty
+          is the useful part: it trains the same clinical reasoning and verbal
+          discipline the viva demands.
+        </p>
+      </div>
+      <div className="step-preview">
+        {steps.map((step, index) => (
+          <div key={step.label}>
+            <strong>{String(index + 1).padStart(2, "0")}</strong>
+            <span>{step.label}</span>
+          </div>
+        ))}
+      </div>
+      <div className="readiness-map-preview">
+        <div>
+          <p className="eyebrow">Build your readiness map from one case</p>
+          <h3>Attempted first. Mastered later.</h3>
+          <p>
+            The first pass creates the map. The delayed re-test earns mastery.
+            That keeps the app honest and turns small answers into the next
+            useful trigger.
+          </p>
+        </div>
+        <div className="map-card" aria-label="Readiness map preview">
+          <span>Attempted</span>
+          <span>Due for re-test</span>
+          <span className="gold-cell">Mastered</span>
+          <span>Gap</span>
+        </div>
+      </div>
     </section>
   );
 }
