@@ -1,0 +1,8 @@
+[2026-06-27T14:43:00.820Z] GET http://localhost:8123/index.html → 200 (1ms, 45031B)
+[2026-06-27T14:43:00.825Z] GET http://localhost:8123/react.production.min.js → 200 (2ms, 10751B)
+[2026-06-27T14:43:00.825Z] GET http://localhost:8123/react-dom.production.min.js → 200 (3ms, 131835B)
+[2026-06-27T14:43:00.825Z] GET http://localhost:8123/support.js → 200 (1ms, 58047B)
+[2026-06-27T14:43:00.825Z] GET https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;450;500;600;700&display=swap → 200 (109ms, 1466B)
+[2026-06-27T14:43:00.943Z] GET http://localhost:8123/index.html → 200 (1ms, -187B)
+[2026-06-27T14:43:00.971Z] GET https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2 → 200 (117ms, 48982B)
+[2026-06-27T14:43:00.971Z] GET https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjIJFJpc.woff2 → 200 (147ms, 132040B)

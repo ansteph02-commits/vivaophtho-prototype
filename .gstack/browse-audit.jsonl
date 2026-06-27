@@ -1,0 +1,4 @@
+{"ts":"2026-06-27T14:43:00.756Z","cmd":"network","args":"--clear","origin":"about:blank","durationMs":2,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-27T14:43:00.943Z","cmd":"goto","args":"http://localhost:8123/index.html","origin":"http://localhost:8123/index.html","durationMs":129,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-27T14:43:01.621Z","cmd":"wait","args":"--networkidle","origin":"http://localhost:8123/index.html","durationMs":619,"status":"ok","hasCookies":false,"mode":"launched"}
+{"ts":"2026-06-27T14:43:01.701Z","cmd":"network","args":"","origin":"http://localhost:8123/index.html","durationMs":0,"status":"ok","hasCookies":false,"mode":"launched"}
