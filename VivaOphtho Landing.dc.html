@@ -35,8 +35,9 @@
   .serif { font-family: 'Newsreader', Georgia, serif; }
   @media (max-width: 760px) {
     .vo { overflow-x: hidden !important; max-width: 100% !important; }
-    .vo > header { padding: 14px 18px !important; flex-wrap: wrap !important; gap: 10px !important; }
+    .vo > header { padding: 16px 18px !important; flex-direction: column !important; align-items: center !important; gap: 12px !important; }
     .vo > header > nav { display: none !important; }
+    .vo > header > div:last-child { width: 100% !important; justify-content: space-between !important; }
     .vo > section { padding-left: 18px !important; padding-right: 18px !important; padding-top: 40px !important; padding-bottom: 40px !important; }
     .vo [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
     .vo [style*="repeat(8"] { grid-template-columns: repeat(4, 1fr) !important; row-gap: 18px !important; }
@@ -93,7 +94,7 @@
       <!-- Readiness ring panel -->
       <div style="background:#fff; border:1px solid #E7EBF1; border-radius:20px; padding:38px 40px; box-shadow:0 30px 60px -36px rgba(14,23,38,.3);">
         <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-          <span style="font-size:13px; font-weight:600; color:#42505F;">EBO blueprint readiness</span>
+          <span style="font-size:13px; font-weight:600; color:#42505F;">EBO Viva Voce / Clinical Cases blueprint readiness</span>
           <span style="font-size:12px; font-weight:600; color:#0FB5A6; background:#E6F7F5; padding:4px 10px; border-radius:20px;">47 days to exam</span>
         </div>
         <div style="display:flex; justify-content:center; padding:14px 0 8px;">
