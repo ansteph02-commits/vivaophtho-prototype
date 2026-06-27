@@ -2,13 +2,20 @@
 
 Bright landing page and interactive free-case prototype for VivaOphtho, an examiner-style ophthalmology viva clinical cases app.
 
-## Preview locally
+## Run locally
 
 ```bash
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:4173`.
+Then open the local URL shown in the terminal.
+
+## Build
+
+```bash
+npm run build
+```
 
 ## Current scope
 
